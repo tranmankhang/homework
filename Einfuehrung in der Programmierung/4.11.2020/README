@@ -1,0 +1,29 @@
+// g++ −E hello.cpp
+Does not compile from the source code "hello.cpp" properly, stops at the preprocessing state.
+//g++ −c hello.cpp
+Compiles and assemble from the source code "hello.cpp", but does not link. Creates the object "hello.o".
+//g++ hello.o
+Compiles an executable with the default name "a.out" from the the object "hello.o".
+//g++ −o hello hello.cpp
+Compiles an executable with the name "hello" from the source code "hello.cpp" instead of the default name "a.out".
+//g++ −Wall −Werror hello.cpp
+Compiles an executable with the default  name "a.out" from the source code "hello.cpp", -Wall enables all construction error warnings, 
+-Werror makes all warnings into errors. Effectively means, that if the source code "hello.cpp" triggers warning, it will be rejected.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+  How to create an executable file and execute it.
+1. Create a .cpp source code using a text editor.
+Example: vi filename.cpp or nano filename.cpp
+2. Enter the codes into the .cpp file using the text editor. Save the file.
+3. Use a compiler to create the executable file from the .cpp file. g++ will
+be used here. Unless specified with -o, g++ will create an executable
+with the default name "a.out".
+Example: g++ filename.cpp
+4. Execute the executable file with "./" and the name of the file.
+Example: ./a.out
+
+  Note: One needs to be on the same working directory during this process. To
+know one where currently is, use the command "pwd" to print the current
+working directory. Navigate with "cd".
+
