@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 template<typename T>
 class Interval {
 	T lb, ub;
